@@ -1,0 +1,153 @@
+Lista Sala
+
+Exercício 1
+
+nota1=float(input("Digite a primeira nota: "))
+nota2=float(input("Digite a segunda nota: "))
+nota3=float(input("Digite a terceira nota: "))
+
+media=(nota1+nota2+nota3)/3
+
+if media >= 6.0:
+    print(f"Parabéns! Você foi aprovado com média {media:.2f}.")
+
+else:
+    print(f"Infelizmente você não foi aprovado com média {media:.2f}.")
+
+
+
+Exercício 2
+
+nota1=float(input("Digite a primeira nota: "))
+nota2=float(input("Digite a segunda nota: "))
+
+media=(nota1+nota2)/2
+
+if media >= 6.0:
+    print(f"Parabéns! Você foi aprovado com média %.2f." %(media))
+
+else:
+    nota_exame = float(input("Digite a nota do exame: "))
+
+    nova_media = (media + nota_exame) / 2
+    if nova_media >= 5.0:
+        print(f"Você foi aprovado em exame com média '%.2f'" %(nova_media))
+    else:
+        print(f"Infelizmente você não foi aprovado com média '%.2f'" %(nova_media))
+
+
+Exercício 3
+valor1=float(input("Digite o primeiro valor: "))
+valor2=float(input("Digite o segundo valor: "))
+
+diferenca = abs(valor1 - valor2)
+maior = max(valor1, valor2)
+menor = min(valor1, valor2)
+
+print(f"A diferença do maior para o menor é: {maior - menor}")
+
+
+Exercício 4
+a = float(input("Digite o valor do lado A do triângulo: "))
+b = float(input("Digite o valor do lado B do triângulo: "))
+c = float(input("Digite o valor do lado C do triângulo: "))
+
+if a+b>c and b+c>a and c+a>b:
+    if a==b==c:
+        print("Equilátero")
+    elif a==b or b==c or a==c:
+        print("Isósceles")
+    else:
+        print("Escaleno")
+else:
+    print("Os lados fornecidos não formam um triângulo.")
+
+
+Exercício 5
+a = float(input("Digite o valor de A: "))
+b = float(input("Digite o valor de B: "))
+c = float(input("Digite o valor de C: "))
+
+valores_ordenados=sorted([a, b, c])
+
+print("Os valores em ordem cresente: ", valores_ordenados)
+
+
+Exercício 6
+import math
+
+a=float(input("Digite o valor do coeficiente 'a': "))
+b=float(input("Digite o valor do coeficiente 'b': "))
+c=float(input("Digite o valor do coeficiente 'c': "))
+
+discriminante = b**2 - 4*a*c
+
+if discriminante > 0:
+    raiz1 = (-b + math.sqrt(discriminante)) / (2*a)
+    raiz2 = (-b - math.sqrt(discriminante)) / (2*a)
+    print("Raízes reais e distintas:", raiz1, "e", raiz2)
+    
+elif discriminante == 0:
+    raiz = -b / (2*a)
+    print("Raízes reais e iguais:", raiz)
+    
+else:
+    parte_real = -b / (2*a)
+    parte_imaginaria = math.sqrt(abs(discriminante)) / (2*a)
+    print("Raízes complexas:", complex(parte_real, parte_imaginaria), complex(parte_real, -parte_imaginaria))
+
+
+Exercício 7
+a=float(input("Digite um número inteiro: "))
+
+if a>=0:
+    print("O módulo desse número é:", a)
+else:
+    a=a*(-1)
+    print("O módulo desse número é:", a)
+
+
+Exercício 8
+a = float(input("Digite o primeiro valor: "))
+b = float(input("Digite o segundo valor: "))
+c = float(input("Digite o terceiro valor: "))
+
+if a % 2 == 0 and a % 3 == 0:
+    print("O número", a, "é divisível por 2 e 3.")
+else:
+    print("O número", a, "não é divisível por 2 e 3.")
+    
+    
+if b % 2 == 0 and b % 3 == 0:
+    print("O número", b, "é divisível por 2 e 3.")
+else:
+    print("O número", b, "não é divisível por 2 e 3.")
+    
+    
+if c % 2 == 0 and c % 3 == 0:
+    print("O número", c, "é divisível por 2 e 3.")
+else:
+    print("O número", c, "não é divisível por 2 e 3.")
+
+
+Exercício 9
+a = float(input("Digite o primeiro valor: "))
+b = float(input("Digite o segundo valor: "))
+c = float(input("Digite o terceiro valor: "))
+
+if a % 4 == 0 or a % 5 == 0:
+    print("O número", a, "é divisível por 4 ou 5.")
+else:
+    print("O número", a, "não é divisível por 4 e 5.")
+    
+    
+if b % 4 == 0 or b % 5 == 0:
+    print("O número", b, "é divisível por 4 ou 5.")
+else:
+    print("O número", b, "não é divisível por 4 ou 5.")
+    
+    
+if c % 4 == 0 or c % 5 == 0:
+    print("O número", c, "é divisível por 4 ou 5.")
+else:
+    print("O número", c, "não é divisível por 4 ou 5.")
