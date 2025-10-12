@@ -24,16 +24,16 @@ nota2=float(input("Digite a segunda nota: "))
 media=(nota1+nota2)/2
 
 if media >= 6.0:
-    print(f"Parabéns! Você foi aprovado com média %.2f." %(media))
+    print(f"Parabéns! Você foi aprovado com média {media:.2f}")
 
 else:
     nota_exame = float(input("Digite a nota do exame: "))
 
     nova_media = (media + nota_exame) / 2
     if nova_media >= 5.0:
-        print(f"Você foi aprovado em exame com média '%.2f'" %(nova_media))
+        print(f"Você foi aprovado em exame com média {nova_media:.2f}")
     else:
-        print(f"Infelizmente você não foi aprovado com média '%.2f'" %(nova_media))
+        print(f"Infelizmente você não foi aprovado com média {nova_media:.2f}")
 
 
 Exercício 3
