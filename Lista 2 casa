@@ -9,3 +9,23 @@ else:
 
 
 Exercício 2
+nc=10
+ni=float(input("Digite um número inteiro: "))
+diferenca = nc - ni
+if diferenca < 0:
+    diferenca = diferenca * (-1)
+print(f"Os números estão {diferenca} unidades distantes.")
+
+
+Exercício 3
+import math
+nota = float(input("Digite a nota do aluno: "))
+parte_decimal, parte_inteira = math.modf(nota)
+if parte_decimal > 0.5:
+    nota_arredondada = parte_inteira + 1.0
+else:
+    nota_arredondada = parte_inteira
+print(f"Resultado do arredondamento: {nota_arredondada:.1f}")
+
+
+Exercício 4
