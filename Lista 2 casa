@@ -95,3 +95,39 @@ print(f"Total de salários líquidos pagos: R$ {total_salarios_liquidos:.2f}")
 
 
 Exercício 6
+meses = {
+    1: "Janeiro",
+    2: "Fevereiro",
+    3: "Março",
+    4: "Abril",
+    5: "Maio",
+    6: "Junho",
+    7: "Julho",
+    8: "Agosto",
+    9: "Setembro",
+    10: "Outubro",
+    11: "Novembro",
+    12: "Dezembro"
+}
+
+numero = int(input("Digite o número do mês: "))
+
+if 1 <= numero <= 12:
+    print(f"O mês é {meses[numero]}.")
+
+
+Exercício 7
+cursos = {
+    1: "Engenharia",
+    2: "Edificações",
+    3: "Sistemas Elétricos",
+    4: "Turismo",
+    5: "Análise de Sistemas"
+}
+
+numero = int(input("Digite o número do curso: "))
+
+if 1 <= numero <= 5:
+    print(f"O curso é {cursos[numero]}.")
+else:
+    print(f"Código inválido. Digite um número de 1 a 5.")
